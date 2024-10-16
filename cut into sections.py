@@ -18,205 +18,21 @@ nltk.download('wordnet')
 # Global Variables
 PDF_DIRECTORY = '/Users/it/desktop/PDFs'  # Directory containing the PDF files
 OUTPUT_DIRECTORY = '/Users/it/desktop/js'  # Directory to save the JSON files
-
+SECTION_MAPPING_PATH = '/Users/it/Desktop/section_formatting/sections-and-different-namings.json'  # Path to the JSON file containing the section name mappings
 # Initialize lemmatizer and stopword list
 lemmatizer = WordNetLemmatizer()
 stop_words = set(stopwords.words('english') + stopwords.words('italian'))  # Add English and Italian stopwords
 
-# Mapping of section names to possible headings
-SECTION_NAME_MAPPING = {
-    "Finalità": [
-        "Finalità", "scopo", "obiettivi", "Ambito"
-    ],
-    "Descrizione dell’intervento": [
-        "Tipo di intervento"
-    ],
-    "Riferimenti normativi": [
-        "Norme di riferimento", "dispositivi normativi"
-    ],
-    "Dotazione finanziaria": [
-        "Dotazione finanziaria"
-    ],
-    "Interventi ammissibili": [
-        "Spese ammissibili"
-    ],
-    "Beneficiari": [
-        "Requisiti di ammissibilità", "a chi si rivolge", "chi può fare domanda"
-    ],
-    "Obblighi del beneficiario": [
-        "Condizioni e obblighi dei beneficiari"
-    ],
-    "Modalità di presentazione della domanda": [
-        "Procedura di richiesta", "come fare domanda"
-    ],
-    "Termini per la presentazione della domanda": [
-        "Scadenze", "date di invio delle domande"
-    ],
-    "Modalità di erogazione dei fondi": [
-        "Tempistiche e modalità di pagamento"
-    ],
-    "Criteri di selezione": [
-        "Modalità di valutazione", "punteggi"
-    ],
-    "Documentazione richiesta": [
-        "Allegati obbligatori", "certificazioni", "dichiarazioni"
-    ],
-    "Durata del progetto": [
-        "Periodo di attuazione", "tempistiche"
-    ],
-    "Soggetti attuatori": [
-        "Chi gestisce il bando", "organizzazioni responsabili"
-    ],
-    "Vincoli": [
-        "Limitazioni", "requisiti particolari", "clausole"
-    ],
-    "Cofinanziamento": [
-        "Percentuale di fondi richiesti", "obblighi di cofinanziamento"
-    ],
-    "Contatti e supporto": [
-        "Informazioni per assistenza", "numeri di riferimento"
-    ],
-    "Sanzioni e decadenza": [
-        "Penalità", "condizioni di revoca"
-    ],
-    "Stato di avanzamento": [
-        "Monitoraggio e valutazione del progetto"
-    ],
-    "Risultati attesi": [
-        "Impatti e obiettivi misurabili"
-    ],
-    "Oggetto": [
-        "Oggetto del Bando", "Oggetto della Gara", "Descrizione dell'Appalto", "Finalità del Bando"
-    ],
-    "Tipologia di Procedura": [
-        "Tipologia di Procedura", "Tipo di Procedura", "Procedura di Gara", "Tipo di Appalto"
-    ],
-    "Importo a Base di Gara": [
-        "Importo a Base di Gara", "Importo Complessivo", "Importo dell'Appalto", "Valore Stimato dell'Appalto"
-    ],
-    "Durata dell'Appalto": [
-        "Durata dell'Appalto", "Durata del Contratto", "Periodo di Esecuzione", "Termine di Esecuzione"
-    ],
-    "Requisiti di Partecipazione": [
-        "Requisiti di Partecipazione", "Condizioni di Partecipazione", "Requisiti per la Partecipazione",
-        "Requisiti di Ammissione"
-    ],
-    "Termine per la Presentazione delle Offerte": [
-        "Termine per la Presentazione delle Offerte", "Scadenza per la Presentazione delle Offerte", "Data di Scadenza",
-        "Termine di Presentazione"
-    ],
-    "Modalità di Presentazione delle Offerte": [
-        "Modalità di Presentazione delle Offerte", "Modalità di Invio delle Offerte", "Istruzioni per la Presentazione"
-    ],
-    "Criteri di Aggiudicazione": [
-        "Criteri di Aggiudicazione", "Criteri di Valutazione", "Criteri di Scelta dell'Offerta"
-    ],
-    "Cauzioni e Garanzie Richieste": [
-        "Cauzioni e Garanzie Richieste", "Garanzie Richieste", "Cauzioni a Carico dell'Appaltatore"
-    ],
-    "Informazioni Aggiuntive": [
-        "Informazioni Aggiuntive", "Ulteriori Informazioni", "Chiarimenti"
-    ],
-    "Pubblicazione": [
-        "Pubblicazione", "Luogo di Pubblicazione", "Pubblicazione sulla Gazzetta Ufficiale"
-    ],
 
-    "Purpose": [
-        "Purpose", "Objective", "Scope", "Goals", "Finalità", "scopo", "obiettivi", "Ambito"
-    ],
-    "Description of the Intervention": [
-        "Description of the Intervention", "Type of Intervention", "Descrizione dell’intervento", "Tipo di intervento"
-    ],
-    "Legal References": [
-        "Legal References", "Normative References", "Regulatory References", "Riferimenti normativi", "Norme di riferimento", "dispositivi normativi"
-    ],
-    "Financial Allocation": [
-        "Financial Allocation", "Funding", "Dotazione finanziaria"
-    ],
-    "Eligible Interventions": [
-        "Eligible Expenditures", "Eligible Interventions", "Interventi ammissibili", "Spese ammissibili"
-    ],
-    "Beneficiaries": [
-        "Eligibility Requirements", "Who Can Apply", "Target Audience", "Beneficiaries", "Requisiti di ammissibilità", "a chi si rivolge", "chi può fare domanda"
-    ],
-    "Beneficiary Obligations": [
-        "Beneficiary Obligations", "Conditions and Obligations of Beneficiaries", "Obblighi del beneficiario", "Condizioni e obblighi dei beneficiari"
-    ],
-    "Application Submission Procedure": [
-        "Application Submission Procedure", "How to Apply", "Modalità di presentazione della domanda", "Procedura di richiesta", "come fare domanda"
-    ],
-    "Application Deadlines": [
-        "Application Deadlines", "Submission Deadlines", "Submission Dates", "Termini per la presentazione della domanda", "Scadenze", "date di invio delle domande"
-    ],
-    "Disbursement of Funds": [
-        "Disbursement of Funds", "Payment Timing and Methods", "Modalità di erogazione dei fondi", "Tempistiche e modalità di pagamento"
-    ],
-    "Selection Criteria": [
-        "Selection Criteria", "Evaluation Criteria", "Scoring", "Criteri di selezione", "Modalità di valutazione", "punteggi"
-    ],
-    "Required Documentation": [
-        "Required Documentation", "Mandatory Attachments", "Certificates", "Declarations", "Documentazione richiesta", "Allegati obbligatori", "certificazioni", "dichiarazioni"
-    ],
-    "Project Duration": [
-        "Project Duration", "Implementation Period", "Timelines", "Durata del progetto", "Periodo di attuazione", "tempistiche"
-    ],
-    "Implementing Bodies": [
-        "Implementing Bodies", "Managing Organizations", "Soggetti attuatori", "Chi gestisce il bando", "organizzazioni responsabili"
-    ],
-    "Constraints": [
-        "Constraints", "Special Requirements", "Limitations", "Clauses", "Vincoli", "Limitazioni", "requisiti particolari", "clausole"
-    ],
-    "Co-financing": [
-        "Co-financing", "Percentage of Requested Funds", "Co-financing Obligations", "Cofinanziamento", "Percentuale di fondi richiesti", "obblighi di cofinanziamento"
-    ],
-    "Contact and Support": [
-        "Contact and Support", "Support Information", "Contact Numbers", "Contatti e supporto", "Informazioni per assistenza", "numeri di riferimento"
-    ],
-    "Penalties and Revocation": [
-        "Penalties", "Revocation Conditions", "Penalties and Revocation", "Sanzioni e decadenza", "Penalità", "condizioni di revoca"
-    ],
-    "Progress Status": [
-        "Progress Status", "Project Monitoring and Evaluation", "Stato di avanzamento", "Monitoraggio e valutazione del progetto"
-    ],
-    "Expected Results": [
-        "Expected Results", "Measurable Goals and Impacts", "Risultati attesi", "Impatti e obiettivi misurabili"
-    ],
-    "Object": [
-        "Object", "Subject of the Call", "Subject of the Tender", "Description of the Tender", "Purpose of the Call", "Oggetto", "Oggetto del Bando", "Oggetto della Gara", "Descrizione dell'Appalto", "Finalità del Bando"
-    ],
-    "Type of Procedure": [
-        "Type of Procedure", "Procedure Type", "Tender Procedure", "Contract Type", "Tipologia di Procedura", "Tipo di Procedura", "Procedura di Gara", "Tipo di Appalto"
-    ],
-    "Contract Base Amount": [
-        "Contract Base Amount", "Total Amount", "Contract Value", "Estimated Contract Value", "Importo a Base di Gara", "Importo Complessivo", "Importo dell'Appalto", "Valore Stimato dell'Appalto"
-    ],
-    "Contract Duration": [
-        "Contract Duration", "Contract Period", "Execution Period", "Execution Deadline", "Durata dell'Appalto", "Durata del Contratto", "Periodo di Esecuzione", "Termine di Esecuzione"
-    ],
-    "Participation Requirements": [
-        "Participation Requirements", "Conditions for Participation", "Admission Requirements", "Requisiti di Partecipazione", "Condizioni di Partecipazione", "Requisiti per la Partecipazione", "Requisiti di Ammissione"
-    ],
-    "Offer Submission Deadline": [
-        "Offer Submission Deadline", "Offer Submission Closing Date", "Submission Deadline", "Termine per la Presentazione delle Offerte", "Scadenza per la Presentazione delle Offerte", "Data di Scadenza", "Termine di Presentazione"
-    ],
-    "Offer Submission Procedure": [
-        "Offer Submission Procedure", "Submission Method", "Instructions for Submission", "Modalità di Presentazione delle Offerte", "Modalità di Invio delle Offerte", "Istruzioni per la Presentazione"
-    ],
-    "Award Criteria": [
-        "Award Criteria", "Evaluation Criteria", "Offer Selection Criteria", "Criteri di Aggiudicazione", "Criteri di Valutazione", "Criteri di Scelta dell'Offerta"
-    ],
-    "Required Guarantees and Bonds": [
-        "Required Guarantees", "Required Bonds", "Contractor's Obligations", "Cauzioni e Garanzie Richieste", "Garanzie Richieste", "Cauzioni a Carico dell'Appaltatore"
-    ],
-    "Additional Information": [
-        "Additional Information", "Further Information", "Clarifications", "Informazioni Aggiuntive", "Ulteriori Informazioni", "Chiarimenti"
-    ],
-    "Publication": [
-        "Publication", "Place of Publication", "Publication in the Official Gazette", "Pubblicazione", "Luogo di Pubblicazione", "Pubblicazione sulla Gazzetta Ufficiale"
-    ]
+# Function to load SECTION_NAME_MAPPING from a JSON file
+def load_section_name_mapping(json_path):
+    with open(json_path, 'r', encoding='utf-8') as f:
+        return json.load(f)
 
 
-}
+# Load the section name mapping from the specified JSON file
+SECTION_NAME_MAPPING = load_section_name_mapping(SECTION_MAPPING_PATH)
+
 # Create a regex pattern to match any heading (case-insensitive)
 section_pattern = re.compile(r'|'.join(
     [fr'({"|".join(aliases)})' for aliases in SECTION_NAME_MAPPING.values()]),
