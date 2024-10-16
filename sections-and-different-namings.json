@@ -1,95 +1,188 @@
 {
     "Finalità": [
-        "Finalità", "scopo", "obiettivi", "Ambito", "Premessa", "oggetto"
+        "Finalità", "scopo", "obiettivi", "Ambito", "Premessa", "oggetto", "Missione", "Obiettivo generale", "Goal"
+    ],
+    "Purpose": [
+        "Purpose", "Objective", "Scope", "Goals", "Mission", "Overall Aim", "Primary Purpose", "General Objective"
     ],
     "Descrizione dell’intervento": [
-        "Tipo di intervento"
+        "Descrizione dell’intervento", "Tipo di intervento", "Natura dell'intervento", "Descrizione delle attività", "Specifiche tecniche dell'intervento", "Dettagli dell'intervento", "Caratteristiche dell'intervento", "Progetto di intervento"
+    ],
+    "Description of the Intervention": [
+        "Description of the Intervention", "Type of Intervention", "Project Description", "Activity Description", "Intervention Overview", "Action Plan"
     ],
     "Riferimenti normativi": [
-        "Norme di riferimento", "dispositivi normativi", "Testi di riferimento"
+        "Riferimenti normativi", "Norme di riferimento", "dispositivi normativi", "Testi di riferimento", "Quadro normativo", "Legislazione di riferimento", "Disposizioni legislative", "Riferimenti legislativi", "Base normativa"
+    ],
+    "Legal References": [
+        "Legal References", "Normative References", "Regulatory References", "Applicable Laws", "Legislation", "Legal Framework", "Governing Laws"
     ],
     "Dotazione finanziaria": [
-        "Dotazione finanziaria", "risorse finanziarie disponibili"
+        "Dotazione finanziaria", "risorse finanziarie disponibili", "Budget complessivo", "Capitale disponibile", "Fondi a disposizione", "Somme stanziate", "Risorse economiche", "Budget disponibile"
+    ],
+    "Financial Allocation": [
+        "Financial Allocation", "Funding", "Available Budget", "Financial Resources", "Funds Available", "Allocated Budget", "Total Budget"
     ],
     "Interventi ammissibili": [
-        "Spese ammissibili", "finanziamenti ammessi", "progetti finanziabili", "iniziative ammissibili", "costi ammissibili"
+        "Spese ammissibili", "finanziamenti ammessi", "progetti finanziabili", "iniziative ammissibili", "costi ammissibili", "Progetti ammissibili", "Attività finanziabili", "Iniziative sostenibili", "Interventi supportati", "Attività ammesse"
+    ],
+    "Eligible Interventions": [
+        "Eligible Expenditures", "Eligible Interventions", "Fundable Projects", "Eligible Projects", "Supportable Activities", "Qualifying Expenses", "Permitted Interventions"
     ],
     "Beneficiari": [
-        "Requisiti di ammissibilità", "a chi si rivolge", "chi può fare domanda", "soggetti beneficiari", "Destinatari", "soggetti ammissibili", "potenziali beneficiari", "Requisiti di partecipazione"
+        "Requisiti di ammissibilità", "a chi si rivolge", "chi può fare domanda", "soggetti beneficiari", "Destinatari", "soggetti ammissibili", "potenziali beneficiari", "Requisiti di partecipazione", "Categorie ammissibili", "Profili idonei", "Partecipanti idonei", "Soggetti legittimati", "Beneficiari ammissibili", "Gruppo target"
+    ],
+    "Beneficiaries": [
+        "Eligibility Requirements", "Who Can Apply", "Target Audience", "Beneficiaries", "Eligible Participants", "Eligible Recipients", "Qualified Applicants", "Target Group"
     ],
     "Obblighi del beneficiario": [
-        "Condizioni e obblighi dei beneficiari"
+        "Condizioni e obblighi dei beneficiari", "Responsabilità del beneficiario", "Condizioni da rispettare", "Requisiti post-assegnazione", "Doveri del beneficiario", "Compiti del beneficiario", "Impegni del beneficiario"
+    ],
+    "Beneficiary Obligations": [
+        "Beneficiary Obligations", "Conditions and Obligations of Beneficiaries", "Responsibilities of the Beneficiary", "Post-Award Conditions", "Duties of the Beneficiary", "Obligations to Fulfill"
     ],
     "Modalità di presentazione della domanda": [
-        "Procedura di richiesta", "come fare domanda", "Iter di domanda"
+        "Procedura di richiesta", "come fare domanda", "Iter di domanda", "Istruzioni per la presentazione", "Passaggi per l'invio della domanda", "Procedure di invio", "Modalità di candidatura", "Guida alla domanda"
+    ],
+    "Application Submission Procedure": [
+        "Application Submission Procedure", "How to Apply", "Submission Steps", "Application Process", "Filing Process", "Submission Guidelines"
     ],
     "Termini per la presentazione della domanda": [
-        "Scadenze", "date di invio delle domande", "modalità di presentazione della domanda"
+        "Scadenze", "date di invio delle domande", "modalità di presentazione della domanda", "Date limite", "Finestra temporale per la domanda", "Termine ultimo per la presentazione", "Deadlines per la domanda", "Scadenze per invio"
+    ],
+    "Application Deadlines": [
+        "Application Deadlines", "Submission Deadlines", "Submission Dates", "Application Closing Date", "Final Submission Date"
     ],
     "Modalità di erogazione dei fondi": [
-        "Tempistiche e modalità di pagamento", "Forma e misura dell’aiuto", "tipologia ed entità delle agevolazioni", "natura e misura dei contributi", "caratteristiche generali dell’agevolazione", "fonte di finanziamento", "entità e forma dell’agevolazione", "regime d’aiuto", "forma e intensità dell’agevolazione", "Forma soglie ed intensità del sostegno"
+        "Tempistiche e modalità di pagamento", "Forma e misura dell’aiuto", "tipologia ed entità delle agevolazioni", "natura e misura dei contributi", "caratteristiche generali dell’agevolazione", "fonte di finanziamento", "entità e forma dell’agevolazione", "regime d’aiuto", "forma soglie ed intensità del sostegno", "Criteri di erogazione", "Meccanismi di pagamento", "Modalità di distribuzione", "Procedure di pagamento"
+    ],
+    "Disbursement of Funds": [
+        "Disbursement of Funds", "Payment Timing and Methods", "Funding Procedure", "Payment Schedule", "Financial Disbursement", "Fund Distribution"
     ],
     "Criteri di selezione": [
-        "Modalità di valutazione", "punteggi", "classifica", "criteri di valutazione"
+        "Modalità di valutazione", "punteggi", "classifica", "criteri di valutazione", "Parametri di valutazione", "Punteggio di selezione", "Criteri di attribuzione", "Principi di selezione", "Fattori di valutazione"
+    ],
+    "Selection Criteria": [
+        "Selection Criteria", "Evaluation Criteria", "Scoring", "Selection Process", "Award Criteria", "Evaluation Parameters"
     ],
     "Documentazione richiesta": [
-        "Allegati obbligatori", "certificazioni", "dichiarazioni"
+        "Allegati obbligatori", "certificazioni", "dichiarazioni", "Documenti necessari", "Elenco degli allegati", "Requisiti documentali", "Documenti richiesti", "Documentazione necessaria"
+    ],
+    "Required Documentation": [
+        "Required Documentation", "Mandatory Attachments", "Certificates", "Declarations", "Necessary Documents", "Required Forms"
     ],
     "Durata del progetto": [
-        "Periodo di attuazione", "tempistiche", "impegni e durata"
+        "Periodo di attuazione", "tempistiche", "impegni e durata", "Durata dell'iniziativa", "Scadenze operative", "Periodo di esecuzione", "Durata stimata", "Tempistiche previste"
+    ],
+    "Project Duration": [
+        "Project Duration", "Implementation Period", "Timelines", "Duration of the Project", "Execution Period", "Project Timeframe"
     ],
     "Soggetti attuatori": [
-        "Chi gestisce il bando", "organizzazioni responsabili", "promotori"
+        "Chi gestisce il bando", "organizzazioni responsabili", "promotori", "Enti responsabili", "Enti gestori", "Organizzazioni partner", "Soggetti esecutori", "Amministratori del progetto"
+    ],
+    "Implementing Bodies": [
+        "Implementing Bodies", "Managing Organizations", "Responsible Entities", "Project Managers", "Executing Bodies", "Project Administrators"
     ],
     "Vincoli": [
-        "Limitazioni", "requisiti particolari", "clausole"
+        "Limitazioni", "requisiti particolari", "clausole", "Limitazioni operative", "Condizioni vincolanti", "Restrizioni previste", "Condizioni restrittive", "Limiti imposti"
+    ],
+    "Constraints": [
+        "Constraints", "Special Requirements", "Limitations", "Clauses", "Boundaries", "Restrictions"
     ],
     "Cofinanziamento": [
-        "Percentuale di fondi richiesti", "obblighi di cofinanziamento"
+        "Percentuale di fondi richiesti", "obblighi di cofinanziamento", "Partecipazione finanziaria", "Percentuali di contributo", "Fondi da reperire", "Contributo finanziario", "Supporto aggiuntivo"
+    ],
+    "Co-financing": [
+        "Co-financing", "Percentage of Requested Funds", "Co-financing Obligations", "Financial Contribution", "Required Co-funding"
     ],
     "Contatti e supporto": [
-        "Informazioni per assistenza", "numeri di riferimento"
+        "Informazioni per assistenza", "numeri di riferimento", "Assistenza e supporto", "Contatti utili", "Canali di assistenza", "Supporto tecnico", "Servizi di supporto"
+    ],
+    "Contact and Support": [
+        "Contact and Support", "Support Information", "Contact Numbers", "Help Desk", "Assistance Channels"
     ],
     "Sanzioni e decadenza": [
-        "Penalità", "condizioni di revoca"
+        "Penalità", "condizioni di revoca", "Penalità previste", "Condizioni di esclusione", "Perdita dei benefici", "Revoca del supporto", "Penalità per inadempienza"
+    ],
+    "Penalties and Revocation": [
+        "Penalties", "Revocation Conditions", "Sanctions", "Exclusion Conditions", "Loss of Benefits"
     ],
     "Stato di avanzamento": [
-        "Monitoraggio e valutazione del progetto"
+        "Monitoraggio e valutazione del progetto", "Aggiornamenti sullo stato", "Rapporto di progresso", "Andamento del progetto", "Report sullo stato"
+    ],
+    "Progress Status": [
+        "Progress Status", "Project Monitoring and Evaluation", "Project Updates", "Progress Reports", "Status Overview"
     ],
     "Risultati attesi": [
-        "Impatti e obiettivi misurabili"
+        "Impatti e obiettivi misurabili", "Obiettivi concreti", "Esiti previsti", "Impatti programmati", "Risultati raggiungibili", "Aspettative di risultato"
+    ],
+    "Expected Results": [
+        "Expected Results", "Measurable Goals and Impacts", "Planned Outcomes", "Achievable Results"
     ],
     "Oggetto": [
-        "Oggetto del Bando", "Oggetto della Gara", "Descrizione dell'Appalto", "Finalità del Bando"
+        "Oggetto del Bando", "Oggetto della Gara", "Descrizione dell'Appalto", "Finalità del Bando", "Argomento del Bando", "Descrizione della commessa", "Titolo del progetto", "Oggetto della proposta"
+    ],
+    "Object": [
+        "Object", "Subject of the Call", "Subject of the Tender", "Description of the Tender", "Purpose of the Call", "Topic"
     ],
     "Tipologia di Procedura": [
-        "Tipologia di Procedura", "Tipo di Procedura", "Procedura di Gara", "Tipo di Appalto"
+        "Tipologia di Procedura", "Tipo di Procedura", "Procedura di Gara", "Tipo di Appalto", "Procedura negoziata", "Bando di gara aperto", "Procedura ristretta", "Tipo di contratto", "Procedura selettiva"
+    ],
+    "Type of Procedure": [
+        "Type of Procedure", "Procedure Type", "Tender Procedure", "Contract Type", "Procurement Process"
     ],
     "Importo a Base di Gara": [
-        "Importo a Base di Gara", "Importo Complessivo", "Importo dell'Appalto", "Valore Stimato dell'Appalto"
+        "Importo a Base di Gara", "Importo Complessivo", "Importo dell'Appalto", "Valore Stimato dell'Appalto", "Costo stimato", "Importo appaltato", "Base d’asta", "Valore dell'offerta"
+    ],
+    "Contract Base Amount": [
+        "Contract Base Amount", "Total Amount", "Contract Value", "Estimated Contract Value", "Bid Amount", "Tender Amount"
     ],
     "Durata dell'Appalto": [
-        "Durata dell'Appalto", "Durata del Contratto", "Periodo di Esecuzione", "Termine di Esecuzione"
+        "Durata dell'Appalto", "Durata del Contratto", "Periodo di Esecuzione", "Termine di Esecuzione", "Tempo di completamento", "Durata prevista", "Termini di consegna", "Tempi di esecuzione"
+    ],
+    "Contract Duration": [
+        "Contract Duration", "Contract Period", "Execution Period", "Execution Deadline", "Completion Time", "Expected Duration"
     ],
     "Requisiti di Partecipazione": [
-        "Requisiti di Partecipazione", "Condizioni di Partecipazione", "Requisiti per la Partecipazione", "Requisiti di Ammissione"
+        "Requisiti di Partecipazione", "Condizioni di Partecipazione", "Requisiti per la Partecipazione", "Requisiti di Ammissione", "Criteri di idoneità", "Qualifiche necessarie", "Condizioni di ammissione", "Requisiti obbligatori", "Requisiti minimi"
+    ],
+    "Participation Requirements": [
+        "Participation Requirements", "Conditions for Participation", "Admission Requirements", "Eligibility Criteria", "Required Qualifications", "Entry Conditions"
     ],
     "Termine per la Presentazione delle Offerte": [
-        "Termine per la Presentazione delle Offerte", "Scadenza per la Presentazione delle Offerte", "Data di Scadenza", "Termine di Presentazione"
+        "Termine per la Presentazione delle Offerte", "Scadenza per la Presentazione delle Offerte", "Data di Scadenza", "Termine di Presentazione", "Data di presentazione", "Termine di invio", "Scadenza offerte", "Termine ultimo"
+    ],
+    "Offer Submission Deadline": [
+        "Offer Submission Deadline", "Offer Submission Closing Date", "Submission Deadline", "Final Deadline", "Closing Date"
     ],
     "Modalità di Presentazione delle Offerte": [
-        "Modalità di Presentazione delle Offerte", "Modalità di Invio delle Offerte", "Istruzioni per la Presentazione"
+        "Modalità di Presentazione delle Offerte", "Modalità di Invio delle Offerte", "Istruzioni per la Presentazione", "Dettagli di invio", "Procedure di partecipazione", "Modalità operative", "Procedura di presentazione"
+    ],
+    "Offer Submission Procedure": [
+        "Offer Submission Procedure", "Submission Method", "Instructions for Submission", "Submission Guidelines", "Filing Procedure"
     ],
     "Criteri di Aggiudicazione": [
-        "Criteri di Aggiudicazione", "Criteri di Valutazione", "Criteri di Scelta dell'Offerta"
+        "Criteri di Aggiudicazione", "Criteri di Valutazione", "Criteri di Scelta dell'Offerta", "Fattori di aggiudicazione", "Criteri premianti", "Valutazione delle offerte", "Parametri di aggiudicazione"
+    ],
+    "Award Criteria": [
+        "Award Criteria", "Evaluation Criteria", "Offer Selection Criteria", "Winning Criteria", "Assessment Parameters"
     ],
     "Cauzioni e Garanzie Richieste": [
-        "Cauzioni e Garanzie Richieste", "Garanzie Richieste", "Cauzioni a Carico dell'Appaltatore"
+        "Cauzioni e Garanzie Richieste", "Garanzie Richieste", "Cauzioni a Carico dell'Appaltatore", "Depositi cauzionali", "Garanzie contrattuali", "Assicurazioni richieste", "Obblighi di garanzia"
+    ],
+    "Required Guarantees and Bonds": [
+        "Required Guarantees", "Required Bonds", "Contractor's Obligations", "Guarantee Requirements", "Required Deposits"
     ],
     "Informazioni Aggiuntive": [
-        "Informazioni Aggiuntive", "Ulteriori Informazioni", "Chiarimenti"
+        "Informazioni Aggiuntive", "Ulteriori Informazioni", "Chiarimenti", "FAQ", "Note integrative", "Chiarimenti ufficiali", "Domande frequenti", "Chiarimenti aggiuntivi"
+    ],
+    "Additional Information": [
+        "Additional Information", "Further Information", "Clarifications", "FAQs", "Supplementary Information"
     ],
     "Pubblicazione": [
-        "Pubblicazione", "Luogo di Pubblicazione", "Pubblicazione sulla Gazzetta Ufficiale"
+        "Pubblicazione", "Luogo di Pubblicazione", "Pubblicazione sulla Gazzetta Ufficiale", "Annuncio ufficiale", "Comunicazione pubblica", "Avviso in gazzetta", "Pubblicazione formale"
+    ],
+    "Publication": [
+        "Publication", "Place of Publication", "Publication in the Official Gazette", "Official Announcement", "Public Notice"
     ]
 }

@@ -17,7 +17,7 @@ nltk.download('wordnet')
 
 # Global Variables
 PDF_DIRECTORY = '/Users/it/desktop/PDFs'  # Directory containing the PDF files
-OUTPUT_DIRECTORY = '/Users/it/desktop/js'  # Directory to save the JSON files
+OUTPUT_DIRECTORY = '/Users/it/desktop/js/wow'  # Directory to save the JSON files
 SECTION_MAPPING_PATH = '/Users/it/Desktop/section_formatting/sections-and-different-namings.json'  # Path to the JSON file containing the section name mappings
 # Initialize lemmatizer and stopword list
 lemmatizer = WordNetLemmatizer()
