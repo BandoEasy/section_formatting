@@ -19,8 +19,8 @@ import re
 
 
 # Set up Airtable API details
-AIRTABLE_API_KEY = 'patvS8osFDngCE0iW.4728217ddb2f14ecb1a3267e685ea11382100608c5f39205d0249eae7b8356c3'
-BASE_ID = 'appMoJrdRNUc086rC'
+AIRTABLE_API_KEY = ''
+BASE_ID = ''
 TABLE_NAME = 'Bandi online (clone)'  # Your table name
 PDF_FIELD_NAME = 'PDF'  # Your attachment field name
 
